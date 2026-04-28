@@ -5,7 +5,7 @@ Run a command every `n` seconds. See the output in terminal and/or write to disk
 
 ## Usage
 
-One file: [`log`](/log), a Bash shell script.
+One file: [`log`](/log), a Bash script.
 
 ```sh
 log [-v] [-n SECONDS] [-o FILE] [-t] [-h] <command>
