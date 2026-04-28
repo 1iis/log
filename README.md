@@ -22,7 +22,7 @@ Use `-v -o FILE` to *both* see outputs in the terminal *and* write to `FILE`.
 
 | Flag | Description
 | --- | ---
-| `-v`           | Print output to terminal. In its absence, writes to <command>.log
+| `-v`           | Print output to terminal<br>If absent, writes to `<command>.log`
 | `-n SECONDS`   | Interval in `SECONDS` (default: 1)
 | `-o FILE`      | Log output to `FILE` (only if `-o` used)
 | `-t`           | Prepend each line with Unix timestamp
