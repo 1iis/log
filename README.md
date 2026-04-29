@@ -1,5 +1,5 @@
 # log
-Run a command every `n` seconds. See the output in terminal and/or write to disk.
+Run a command every `n` seconds. See cumulative outputs (one run by line) in terminal and/or write to disk.
 
 `log` is a barebone alternative to `watch`, better suited for longitudinal monitoring, logging, etc.
 
