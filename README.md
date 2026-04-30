@@ -34,7 +34,6 @@ chmod +x /usr/local/bin/log
 >
 > ```sh
 > disable log       # ONLY for Zsh
-> ...
 > ```
 
 ## 1. Usage
