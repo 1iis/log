@@ -30,6 +30,7 @@ Use `-v -o FILE` to *both* see outputs in the terminal *and* write to `FILE`.
 
 ### Examples
 
+Basic usage: `log` writes to `<command>.log`.
 ```sh
 log date  # wait a few seconds
 ^C        # CTRL+C to 
@@ -42,21 +43,19 @@ Tue Apr 28 14:14:35 UTC 2026
 Tue Apr 28 14:14:36 UTC 2026
 ```
 
+`-v` prints to terminal, no write to file.
 ```sh
-log -v date  # no log to file
+log -v date
 Tue Apr 28 14:14:51 UTC 2026
 Tue Apr 28 14:14:52 UTC 2026
-Tue Apr 28 14:14:53 UTC 2026
-Tue Apr 28 14:14:54 UTC 2026
 ...
 ```
 
+`-t` for timestamps.
 ```sh
 log -tv date  # Unix timestamps
 [1777386029] Tue Apr 28 14:20:29 UTC 2026
 [1777386030] Tue Apr 28 14:20:30 UTC 2026
-[1777386031] Tue Apr 28 14:20:31 UTC 2026
-[1777386032] Tue Apr 28 14:20:32 UTC 2026
 ...
 ```
 
@@ -65,13 +64,9 @@ Write the output of `date` with Unix timestamps to both terminal (`-v`) and to a
 log -t -v -o /my/file.log date
 [1777386138] Tue Apr 28 14:22:18 UTC 2026
 [1777386139] Tue Apr 28 14:22:19 UTC 2026
-[1777386140] Tue Apr 28 14:22:20 UTC 2026
-[1777386141] Tue Apr 28 14:22:21 UTC 2026
 ^C
 
 cat /my/file.log
 [1777386138] Tue Apr 28 14:22:18 UTC 2026
 [1777386139] Tue Apr 28 14:22:19 UTC 2026
-[1777386140] Tue Apr 28 14:22:20 UTC 2026
-[1777386141] Tue Apr 28 14:22:21 UTC 2026
 ```
