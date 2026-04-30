@@ -29,16 +29,11 @@ chmod +x /usr/local/bin/log
 ```
 
 > [!Warning]
-> If you use [Zsh](https://zsh.sourceforge.io/), `log` is a built-in function to compute natural $ln$.  
+> If you use **[Zsh](https://zsh.sourceforge.io/)**, `log` is a built-in function to compute natural $ln$.  
 > If if you don't need to do such math in your shell, you can disable it, thereby letting `/usr/local/bin/log` be found by `which log`, and run as expected.
 >
 > ```sh
 > disable log       # ONLY for Zsh
-> 
-> log -v <command>  # now works properly with our script :)
-> output1
-> output2
-> output3
 > ...
 > ```
 
