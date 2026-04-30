@@ -6,17 +6,15 @@ Run a command every `n` seconds. See cumulative outputs (one run by line) in ter
 ## 0. Install
 `log` is one file with 20 useful lines of Bash logic.
 
-1. Either clone the repo 1iis/log,  
-or download the log file (remove the .txt extension GH adds),  
-or just copy it from 3. Source below!  
+1. Either clone the repo `1iis/log`,  
+or download the [log](/log.sh) file (remove the `.txt` extension GH adds). 
 
-2. Put the file in your PATH.
-
-```bash
-# Pick one:
-
-sudo cp -v log /usr/local/bin  # Copy file
-
+2. Put the file in your PATH. Pick one:
+```sh
+sudo cp -v log.sh /usr/local/bin/log  # Copy file
+```
+or
+```sh
 sudo nano /usr/local/bin/log   # Create file, then:
 # - paste code (Shift+Ctrl+V) from 2. Source
 # - save (Ctrl+O, Enter)
@@ -24,7 +22,7 @@ sudo nano /usr/local/bin/log   # Create file, then:
 ```
 
 Make it executable.
-```bash
+```sh
 chmod +x /usr/local/bin/log
 ```
 
